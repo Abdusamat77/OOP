@@ -65,13 +65,13 @@
 
 
 
-class Walker():
-    def __init__(self,goril):
-        self.goril = goril
-    def walk(self):
-        print(f" {self.goril} ходит")
-walke = Walker("гориллa")
-walke.walk()
+# class Walker():
+#     def __init__(self,goril):
+#         self.goril = goril
+#     def walk(self):
+#         print(f" {self.goril} ходит")
+# walke = Walker("гориллa")
+# walke.walk()
 
 # class Swimmer():
 #     def swim(self):
@@ -85,3 +85,16 @@ walke.walk()
 #     def describe(self):
 #         print(f"{self.name} может плавать и ходить")
         
+class A:
+    def show(self):
+        print("A")
+class B(A):
+    def show(self):
+        print("B")
+class C(A):
+    def show(self):
+        print("c")
+class D(B, C):
+    pass
+d = D()
+d. show()
